@@ -20,6 +20,10 @@ body {
   
 }
 
+.rokak-img{
+  transform: scale(100px);
+}
+
 .padded {
   padding: 2rem 0rem;
 }
@@ -49,11 +53,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: .3rem;
-    flex-direction: row-reverse;
+    flex-direction: row;
 
     & .header_details{
       width: 50%;
-      text-align: end;
+      text-align: start;
     }
 
     & .header_img {
@@ -61,6 +65,7 @@ body {
 
       & img {
         width: 100%;
+        transform: rotateZ(0deg);
 
       }
     }
@@ -84,7 +89,11 @@ body {
     }
 
     & .resume_body_left{
-      border-right: 1px solid #555;
+      border-right: 1px solid transparent;
+    }
+    & .resume_body_right
+    {
+      border-left: 1px solid #111f;
     }
   }
 
